@@ -20,3 +20,7 @@ Arquitetura & Reatividade: Standalone Components, Angular Signals
 Estilização & Acessibilidade: Angular Material / Tailwind CSS (com suporte a alto contraste e fontes grandes para maior legibilidade)
 Node.js e npm (para o Angular)
 Maven 
+
+## Configuração da API
+
+Defina `JWT_SECRET` com pelo menos 32 bytes antes de iniciar a aplicação. A conexão MySQL usa `DB_URL`, `DB_USERNAME` e `DB_PASSWORD` (padrão: `jdbc:mysql://localhost:3306/vitalsenior`, usuário `root`); o serviço de e-mail usa `MAIL_HOST` e `MAIL_PORT`. Para liberar a interface Angular, configure `CORS_ALLOWED_ORIGINS` com a origem permitida, como `http://localhost:4200`.
